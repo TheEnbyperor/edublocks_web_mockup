@@ -1,3 +1,9 @@
+@font-face {
+  src: url("../fonts/GOTHICB.TTF");
+  font-family: "Century Gothic";
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -22,6 +28,22 @@ $primary: #2f2fff;
   background: grey;
 }
 
+
+.logo {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Century Gothic", sans-serif;
+
+  .logo-e {
+    display: inline-block;
+    transform: rotate(-25deg);
+    position: relative;
+    bottom: -0.5px;
+    margin-right: 1px;
+  }
+}
+
 .button {
   display: inline-block;
   border-radius: 100000px;
@@ -39,12 +61,6 @@ $primary: #2f2fff;
 
 .main-menu {
   background: #262626;
-
-  .logo {
-    color: #fff;
-    font-size: 2.5em;
-    font-weight: bold;
-  }
 }
 
 .header {
