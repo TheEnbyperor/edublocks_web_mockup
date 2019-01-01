@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+$gutter: 0.5em;
+$primary: #2f2fff;
+
+.block {
+  padding: $gutter;
+
+  .block-inner {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  background: grey;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 100000px;
+  padding: $gutter;
+  border: 5px solid #000;
+  background: #fff;
+  color: #000;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background: $primary;
+    color: #fff;
+  }
+}
+
+.main-menu {
+  background: #262626;
+
+  .logo {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+}
+
+.header {
+  background: $primary;
+  color: #fff;
+
+  .block-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $gutter;
+    justify-items: center;
+    align-items: center;
+
+    .header-left {
+      grid-row: 1;
+      grid-column: 1;
+
+      .title {
+        font-size: 4em;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-weight: bold;
+      }
+    }
+
+    .header-right {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+}
+
+.section {
+  color: #fff;
+
+  &.section-left {
+    background: #ffc000;
+
+    .block-inner {
+      grid-template-columns: 25% 1fr;
+    }
+  }
+
+  .block-inner {
+    display: grid;
+    grid-gap: $gutter;
+
+    .title {
+      font-size: 2em;
+    }
+  }
+}
