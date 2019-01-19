@@ -2,37 +2,33 @@
   src: url("../fonts/GOTHICB.TTF");
   font-family: "Century Gothic";
   font-weight: bold; }
+
+
+
 body {
   margin: 0;
   font-family: sans-serif; }
 
 .block {
   padding: 0.5em; }
+
+  .block .block-inner {
+    margin: 0 auto;
+    max-width: 1024px; }
   .block .block-inner {
     margin: 0 auto;
     max-width: 1024px; }
 
 .img {
-  width: 250px;
-  height: 250px;
-  max-width: 100%;
-  background: grey; }
-
-.logo {
-  color: #fff;
-  font-size: 2.5em;
-  font-weight: bold;
-  font-family: "Century Gothic", sans-serif; }
-  .logo .logo-e {
-    display: inline-block;
-    transform: rotate(-25deg);
-    position: relative;
-    bottom: -0.5px;
-    margin-right: 1px; }
+  width: 360px;
+  height: 240px;
+  float: left;
+  }
 
 .button {
   display: inline-block;
   border-radius: 100000px;
+  font-weight: bold;
   padding: 0.5em;
   border: 5px solid #000;
   background: #fff;
@@ -44,13 +40,21 @@ body {
 
 .main-menu {
   background: #262626; }
+  .main-menu .logo {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold; }
 
 .header {
-  background: #2f2fff;
-  color: #fff; }
+  color: #fff; 
+  background: #2F2FFF;
+  background-image: url(https://i.ibb.co/ZHpNfrw/darkerpyback.png);
+  background-size: cover;
+}
   .header .block-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
     grid-gap: 0.5em;
     justify-items: center;
     align-items: center; }
@@ -78,4 +82,38 @@ body {
     .section .block-inner .title {
       font-size: 2em; }
 
+      
+
 /*# sourceMappingURL=main.css.map */
+
+#bottom-left{
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.headerImage{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.noPad{
+  padding-bottom: 0em;
+  padding-top: 0.5em;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Century Gothic", sans-serif; }
+  .logo .logo-e {
+    display: inline-block;
+    transform: rotate(-25deg);
+    position: relative;
+    bottom: -0.5px;
+    margin-right: 1px; 
+  }
+
+  
+  
